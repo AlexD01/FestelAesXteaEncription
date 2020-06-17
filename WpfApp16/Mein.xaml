@@ -1,0 +1,53 @@
+﻿<Window x:Class="WpfApp16.Mein"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp16"
+        mc:Ignorable="d"
+        Title="mein" Height="450" Width="800"
+        >
+    <Grid Name="g">
+        <TextBlock Name="Hi"  HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Hello " VerticalAlignment="Top" FontSize="20" FontFamily="Comic Sans MS" />
+        <RadioButton Name="r1" Content="Feistel Crypt" HorizontalAlignment="Left" Margin="10,71,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="20" Checked="r1_Checked"   />
+        <RadioButton Name="r2" Content="AES Crypt" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="20" Checked="r2_Checked"  />
+        <RadioButton Name="r3" Content="XTea Crypt" HorizontalAlignment="Left" Margin="10,135,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="20" Checked="r3_Checked"  />
+        <TextBlock  HorizontalAlignment="Left" Margin="10,38,0,0" TextWrapping="Wrap" Text="Select type crypt" VerticalAlignment="Top" FontSize="20" FontFamily="Comic Sans MS" />
+        <Grid Name="gg"  Margin="200,0,0,0">
+            <TextBlock Text="key" FontSize="16" FontFamily="Comic Sans MS" Margin="413,10,135,377" />
+            <Grid Name="gf" Visibility="Hidden">
+                <TextBox Name="k1" HorizontalAlignment="Left" Height="23" Margin="462,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"  MaxLength="4"/>
+
+                <TextBox Name="ft" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="398"/>
+                <Button Name="fencry" Content="Зашифровать" HorizontalAlignment="Left" Margin="462,50,0,0" VerticalAlignment="Top" Width="120" Click="fencry_Click" />
+                <Button Name="fdecry" Content="Разшифровать" HorizontalAlignment="Left" Margin="462,90,0,0" VerticalAlignment="Top" Width="120" Click="fdecry_Click" />
+                <Button Name="fopen" Content="Открыть файл" HorizontalAlignment="Left" Margin="462,130,0,0" VerticalAlignment="Top" Width="120" Click="fopen_Click" />
+                <Button Name="fsave" Content="Сохранить в файл" HorizontalAlignment="Left" Margin="462,170,0,0" VerticalAlignment="Top" Width="120" Click="fsave_Click" />
+            </Grid>
+            <Grid Name="ga" Visibility="Hidden">
+                <TextBox Name="k2" HorizontalAlignment="Left" Height="23" Margin="462,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"  MaxLength="16"/>
+
+                <TextBox Name="at" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="398"/>
+                <Button Name="aencry" Content="Зашифровать" HorizontalAlignment="Left" Margin="462,50,0,0" VerticalAlignment="Top" Width="120" Click="aencry_Click" />
+                <Button Name="adecry" Content="Разшифровать" HorizontalAlignment="Left" Margin="462,90,0,0" VerticalAlignment="Top" Width="120" Click="adecry_Click" />
+                <Button Name="aopen" Content="Открыть файл" HorizontalAlignment="Left" Margin="462,130,0,0" VerticalAlignment="Top" Width="120" Click="aopen_Click" />
+                <Button Name="asave" Content="Сохранить в файл" HorizontalAlignment="Left" Margin="462,170,0,0" VerticalAlignment="Top" Width="120" Click="asave_Click" />
+                <Button Name="aencrypt" Content="Зашифровать файл" HorizontalAlignment="Left" Margin="462,210,0,0" VerticalAlignment="Top" Width="120" Click="aencrypt_Click" />
+                <Button Name="adecrypt" Content="Разшифровать файл" HorizontalAlignment="Left" Margin="462,250,0,0" VerticalAlignment="Top" Width="120" Click="adecrypt_Click" />
+            </Grid>
+            <Grid Name="gx" Visibility="Hidden">
+                <TextBox Name="k3" HorizontalAlignment="Left" Height="23" Margin="462,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" MaxLength="16"/>
+
+
+
+                <TextBox Name="xt" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="398"/>
+                <Button Name="xencry" Content="Зашифровать" HorizontalAlignment="Left" Margin="462,50,0,0" VerticalAlignment="Top" Width="120" Click="xencry_Click" />
+                <Button Name="xdecry" Content="Разшифровать" HorizontalAlignment="Left" Margin="462,90,0,0" VerticalAlignment="Top" Width="120" Click="xdecry_Click" />
+                <Button Name="xopen" Content="Открыть файл" HorizontalAlignment="Left" Margin="462,130,0,0" VerticalAlignment="Top" Width="120" Click="xopen_Click" />
+                <Button Name="xsave" Content="Сохранить в файл" HorizontalAlignment="Left" Margin="462,170,0,0" VerticalAlignment="Top" Width="120" Click="xsave_Click" />
+                <Button Name="xencrypt" Content="Зашифровать файл" HorizontalAlignment="Left" Margin="462,210,0,0" VerticalAlignment="Top" Width="120" Click="xencrypt_Click" />
+                <Button Name="xdecrypt" Content="Разшифровать файл" HorizontalAlignment="Left" Margin="462,250,0,0" VerticalAlignment="Top" Width="120" Click="xdecrypt_Click" />
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
